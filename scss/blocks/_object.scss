@@ -1,0 +1,60 @@
+.object{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 170px;
+    align-items: center;
+}
+
+.object__content{
+    display: grid;
+    row-gap: 34px;
+}
+
+.object-left{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.object__title{
+    font-size: 33px;
+    font-weight: 700;
+    font-family: $font-title;
+    color: $title-color;
+    position: relative;
+}
+
+.object__text{
+    color: #424545;
+    max-width: 546px;
+}
+
+
+
+
+
+////////////////
+.decor-1{
+    &::before{
+        content: "01";
+        @include decor()
+    }
+}
+.decor-2{
+    &::before{
+        content: "02";
+        @include decor()
+    }    
+}
+.decor-3{
+    &::before{
+        content: "03";
+        @include decor()
+    }   
+}
+.decor-4{
+    &::before{
+        content: "04";
+        @include decor()
+    }    
+}
+//////////////////
